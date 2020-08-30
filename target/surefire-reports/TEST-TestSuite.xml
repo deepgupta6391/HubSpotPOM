@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="1" name="TestSuite" time="20.215" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
+    <property name="java.vm.version" value="25.241-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\Selenium Learning from Naveen\Aug2020POMSeries"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="env" value="stg"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\Selenium Learning from Naveen\Aug2020POMSeries"/>
+    <property name="java.runtime.version" value="1.8.0_241-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\DEEPSH~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Motion Control;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Java\jre1.8.0_241\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Softwares\jars\selenium\browser drivers\IEdriver;C:\Softwares\apache-ant-1.10.7\bin;C:\Program Files\Git\cmd;C:\gradle-5.4.1\bin;C:\Users\Deepshikha\AppData\Local\Android\Sdk\platform-tools;C:\Users\Deepshikha\AppData\Local\Android\Sdk\tools;C:\Users\Deepshikha\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs;C:\Softwares\jars\Sikuli\libs;C:\Users\Deepshikha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Deepshikha\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Deepshikha"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Deepshikha"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_241\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Denv=stg"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_241"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.qa.hubspot.tests.HomePageTest" name="verifyHomePageTitleTest" time="20.202">
+    <failure message="Expected condition failed: waiting for title to be &quot;Reports dashboard&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.27.0, moz:headless: true, moz:processID: 388, moz:profile: C:\Users\Deepshikha\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d7a92fe3-2637-44d3-ba57-f715c1e3e042" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Reports dashboard&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.27.0, moz:headless: true, moz:processID: 388, moz:profile: C:\Users\Deepshikha\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d7a92fe3-2637-44d3-ba57-f715c1e3e042
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:24)
+	at com.qa.hubspot.page.HomePage.getHomePageTitle(HomePage.java:34)
+	at com.qa.hubspot.tests.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:41)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5ccd43c2
+browser name is: firefox
+browser name is: firefox
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1598409019661	geckodriver	INFO	Listening on 127.0.0.1:29787
+1598409020514	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headless&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\DEEPSH~1\\AppData\\Local\\Temp\\rust_mozprofileDQaJ6P&quot;
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+console.error: SearchCache: &quot;_readCacheFile: Error reading cache file:&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
+1598409032493	Marionette	INFO	Listening on port 52904
+1598409034842	Marionette	WARN	TLS certificate errors will be ignored for this session
+Aug 25, 2020 10:30:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1598409044426	geckodriver	INFO	Listening on 127.0.0.1:41009
+1598409045066	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--headless&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\DEEPSH~1\\AppData\\Local\\Temp\\rust_mozprofilerkicNF&quot;
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can&apos;t find profile directory.
+console.error: SearchCache: &quot;_readCacheFile: Error reading cache file:&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
+1598409048616	Marionette	INFO	Listening on port 53014
+1598409048920	Marionette	WARN	TLS certificate errors will be ignored for this session
+Aug 25, 2020 10:30:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.hubspot.tests.LoginPageTest" name="verifyLoginPageTitleTest" time="0.013"/>
+</testsuite>

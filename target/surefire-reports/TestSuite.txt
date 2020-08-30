@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 61.854 sec <<< FAILURE!
+verifyHomePageTitleTest(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 20.202 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Reports dashboard". Current title: "HubSpot Login" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO-PC', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.27.0, moz:headless: true, moz:processID: 388, moz:profile: C:\Users\Deepshikha\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d7a92fe3-2637-44d3-ba57-f715c1e3e042
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.util.ElementUtil.waitForTitlePresent(ElementUtil.java:24)
+	at com.qa.hubspot.page.HomePage.getHomePageTitle(HomePage.java:34)
+	at com.qa.hubspot.tests.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:41)
+
