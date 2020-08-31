@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -98,15 +97,16 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 	@Override
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-		test.get().fail(result.getThrowable(),
-				MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(result.getMethod().getMethodName())).build());
+		test.get().fail(result.getThrowable(), MediaEntityBuilder
+				.createScreenCaptureFromPath(getScreenshot(result.getMethod().getMethodName())).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	@Override
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(result.getMethod().getMethodName())).build());
+		test.get().skip(result.getThrowable(), MediaEntityBuilder
+				.createScreenCaptureFromPath(getScreenshot(result.getMethod().getMethodName())).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 
 	}

@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -34,10 +35,18 @@ public class LoginPageTest {
 	Credentials userCred;
 
 	@BeforeTest(alwaysRun = true)
-	public void setUp() {
+	@Parameters(value = { "browser" })
+	public void setUp(String browser) {
+		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+
+		if (browser.equals(null)) {
+			browserName = prop.getProperty("browser");
+		} else {
+			browserName = browser;
+		}
+
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
@@ -103,7 +112,7 @@ public class LoginPageTest {
 		Assert.assertTrue(loginPage.checkForgotPasswordLink());
 	}
 
-	@Test(priority = 7,enabled = false)
+	@Test(priority = 7)
 	@Description("verify remember me checkbox Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyRememeberMeCheckBox() {
@@ -111,7 +120,7 @@ public class LoginPageTest {
 		Assert.assertFalse(chkBox);
 	}
 
-	@Test(priority = 8,enabled = false)
+	@Test(priority = 8)
 	@Description("verify login button diabled Test....")
 	@Severity(SeverityLevel.MINOR)
 	public void verifyLoginButtonIsDisabled() {
@@ -120,7 +129,7 @@ public class LoginPageTest {
 
 	}
 
-	@Test(priority = 9,enabled = false)
+	@Test(priority = 9)
 	@Description("verify google and sso button Test....")
 	@Severity(SeverityLevel.CRITICAL)
 	public void verifyGoogleAndSSOBtn() {
@@ -130,7 +139,7 @@ public class LoginPageTest {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 10,enabled = false)
+	@Test(priority = 10)
 	@Description("verify footer content Test....")
 	@Severity(SeverityLevel.MINOR)
 	public void verifyFooterText() {

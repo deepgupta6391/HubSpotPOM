@@ -22,6 +22,8 @@ public class OptionsManager {
 			co.addArguments("--incognito");
 		if (prop.getProperty("headless").equals("yes"))
 			co.addArguments("--headless");
+		
+		co.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 
 		return co;
 	}
