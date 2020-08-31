@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -22,7 +23,6 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
-
 @Epic("Epic - 102 :create Home page features")
 @Feature("US - 502 : create test for Home page on hubspot")
 public class HomePageTest {
@@ -34,10 +34,17 @@ public class HomePageTest {
 	Credentials userCred;
 
 	@BeforeTest(alwaysRun = true)
-	public void setUp() throws InterruptedException {
+	@Parameters(value = { "browser" })
+	public void setUp(String browser) {
+		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+
+		if (browser.equals(null)) {
+			browserName = prop.getProperty("browser");
+		} else {
+			browserName = browser;
+		}
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
@@ -45,7 +52,7 @@ public class HomePageTest {
 		homePage = loginPage.doLogin(userCred);
 	}
 
-	@Test(priority = 1,groups = {"sanity","Regression"})
+	@Test(priority = 1, groups = { "sanity", "Regression" })
 	@Description("verify Home Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {

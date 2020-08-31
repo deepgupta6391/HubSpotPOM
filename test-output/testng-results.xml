@@ -2,21 +2,76 @@
 <testng-results skipped="0" failed="1" ignored="6" total="34" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub Spot Regression Suite Parallel" duration-ms="118181" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:30:26Z">
+  <suite name="Hub Spot Regression Suite Parallel" duration-ms="113314" started-at="2020-08-31T22:19:57Z" finished-at="2020-08-31T22:21:50Z">
     <groups>
       <group name="Regression">
-        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@3162743f]" name="verifyHomePageTitleTest" class="com.qa.hubspot.tests.HomePageTest"/>
+        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@cc239ba]" name="verifyHomePageTitleTest" class="com.qa.hubspot.tests.HomePageTest"/>
       </group> <!-- Regression -->
       <group name="sanity">
-        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
-        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@3162743f]" name="verifyHomePageTitleTest" class="com.qa.hubspot.tests.HomePageTest"/>
-        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
+        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@cc239ba]" name="verifyHomePageTitleTest" class="com.qa.hubspot.tests.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyLoginPageTitleTest" class="com.qa.hubspot.tests.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Regression Functional Regression Test - Firefox" duration-ms="57500" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:29:25Z">
+    <test name="Regression Functional Regression Test - edge" duration-ms="68267" started-at="2020-08-31T22:19:57Z" finished-at="2020-08-31T22:21:05Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="setUp" is-config="true" duration-ms="18530" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:28:47Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="setUp" is-config="true" duration-ms="24769" started-at="2020-08-31T22:19:58Z" finished-at="2020-08-31T22:20:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyLoginPageTitleTest" duration-ms="9446" started-at="2020-08-31T22:20:22Z" description="verify login page title test...!!!" finished-at="2020-08-31T22:20:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyNoAccountText" duration-ms="682" started-at="2020-08-31T22:20:52Z" finished-at="2020-08-31T22:20:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoAccountText -->
+        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyEmailAndPasswordLabelText" duration-ms="1118" started-at="2020-08-31T22:20:53Z" finished-at="2020-08-31T22:20:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailAndPasswordLabelText -->
+        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyShowAndHidePasswordLinkText" duration-ms="5162" started-at="2020-08-31T22:20:54Z" finished-at="2020-08-31T22:20:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShowAndHidePasswordLinkText -->
+        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyForgotPasswordLink" duration-ms="578" started-at="2020-08-31T22:20:59Z" finished-at="2020-08-31T22:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLink -->
+        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyRememeberMeCheckBox" duration-ms="602" started-at="2020-08-31T22:21:00Z" finished-at="2020-08-31T22:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememeberMeCheckBox -->
+        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyLoginButtonIsDisabled" duration-ms="698" started-at="2020-08-31T22:21:00Z" finished-at="2020-08-31T22:21:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButtonIsDisabled -->
+        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyGoogleAndSSOBtn" duration-ms="1669" started-at="2020-08-31T22:21:02Z" finished-at="2020-08-31T22:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoogleAndSSOBtn -->
+        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="verifyFooterText" duration-ms="699" started-at="2020-08-31T22:21:04Z" finished-at="2020-08-31T22:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4e92466a]" name="tearDown" is-config="true" duration-ms="933" started-at="2020-08-31T22:21:04Z" finished-at="2020-08-31T22:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- Regression Functional Regression Test - edge -->
+    <test name="Regression Functional Regression Test - Firefox" duration-ms="82017" started-at="2020-08-31T22:19:57Z" finished-at="2020-08-31T22:21:19Z">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="setUp" is-config="true" duration-ms="34651" started-at="2020-08-31T22:19:58Z" finished-at="2020-08-31T22:20:32Z">
           <params>
             <param index="0">
               <value>
@@ -27,11 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyLoginPageTitleTest" duration-ms="4438" started-at="2020-08-31T21:28:47Z" description="verify login page title test...!!!" finished-at="2020-08-31T21:28:51Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyLoginPageTitleTest" duration-ms="8657" started-at="2020-08-31T22:20:32Z" description="verify login page title test...!!!" finished-at="2020-08-31T22:20:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="FAIL" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifySignUpLinkTest" duration-ms="20113" started-at="2020-08-31T21:28:51Z" finished-at="2020-08-31T21:29:11Z">
+        <test-method status="FAIL" signature="verifySignUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifySignUpLinkTest" duration-ms="20013" started-at="2020-08-31T22:20:41Z" finished-at="2020-08-31T22:21:01Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Sign up111 (tried for 20 second(s) with 500 milliseconds interval)]]>
@@ -68,8 +123,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LENOVO-PC', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 80.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200818235255, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 1964, moz:profile: C:\Users\Deepshikha\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 15038900-fd47-4c34-850a-27ba87da82ba
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 80.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200818235255, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9560, moz:profile: C:\Users\Deepshikha\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8d59dcf-b928-471f-8c1c-57780b0a7539
 *** Element info: {Using=link text, value=Sign up111}
 at sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -94,144 +149,85 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyNoAccountText" duration-ms="549" started-at="2020-08-31T21:29:12Z" finished-at="2020-08-31T21:29:12Z">
+        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyNoAccountText" duration-ms="1337" started-at="2020-08-31T22:21:02Z" finished-at="2020-08-31T22:21:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNoAccountText -->
-        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyEmailAndPasswordLabelText" duration-ms="1066" started-at="2020-08-31T21:29:12Z" finished-at="2020-08-31T21:29:13Z">
+        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyEmailAndPasswordLabelText" duration-ms="1097" started-at="2020-08-31T22:21:03Z" finished-at="2020-08-31T22:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailAndPasswordLabelText -->
-        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyShowAndHidePasswordLinkText" duration-ms="4877" started-at="2020-08-31T21:29:13Z" finished-at="2020-08-31T21:29:18Z">
+        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyShowAndHidePasswordLinkText" duration-ms="5706" started-at="2020-08-31T22:21:04Z" finished-at="2020-08-31T22:21:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShowAndHidePasswordLinkText -->
-        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyForgotPasswordLink" duration-ms="616" started-at="2020-08-31T21:29:18Z" finished-at="2020-08-31T21:29:19Z">
+        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyForgotPasswordLink" duration-ms="543" started-at="2020-08-31T22:21:10Z" finished-at="2020-08-31T22:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordLink -->
-        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyRememeberMeCheckBox" duration-ms="504" started-at="2020-08-31T21:29:19Z" finished-at="2020-08-31T21:29:19Z">
+        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyRememeberMeCheckBox" duration-ms="501" started-at="2020-08-31T22:21:11Z" finished-at="2020-08-31T22:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRememeberMeCheckBox -->
-        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyLoginButtonIsDisabled" duration-ms="523" started-at="2020-08-31T21:29:19Z" finished-at="2020-08-31T21:29:20Z">
+        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyLoginButtonIsDisabled" duration-ms="705" started-at="2020-08-31T22:21:11Z" finished-at="2020-08-31T22:21:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginButtonIsDisabled -->
-        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyGoogleAndSSOBtn" duration-ms="1124" started-at="2020-08-31T21:29:20Z" finished-at="2020-08-31T21:29:21Z">
+        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyGoogleAndSSOBtn" duration-ms="1105" started-at="2020-08-31T22:21:12Z" finished-at="2020-08-31T22:21:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleAndSSOBtn -->
-        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="verifyFooterText" duration-ms="518" started-at="2020-08-31T21:29:21Z" finished-at="2020-08-31T21:29:21Z">
+        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="verifyFooterText" duration-ms="502" started-at="2020-08-31T22:21:13Z" finished-at="2020-08-31T22:21:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4a0df195]" name="tearDown" is-config="true" duration-ms="3946" started-at="2020-08-31T21:29:21Z" finished-at="2020-08-31T21:29:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@5bca7664]" name="tearDown" is-config="true" duration-ms="5525" started-at="2020-08-31T22:21:13Z" finished-at="2020-08-31T22:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </test> <!-- Regression Functional Regression Test - Firefox -->
-    <test name="Regression Functional Regression Test - edge" duration-ms="64166" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:29:32Z">
+    <test name="Regression Functional Regression Test - Chrome" duration-ms="113298" started-at="2020-08-31T22:19:57Z" finished-at="2020-08-31T22:21:50Z">
       <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="setUp" is-config="true" duration-ms="15098" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:28:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyLoginPageTitleTest" duration-ms="11253" started-at="2020-08-31T21:28:44Z" description="verify login page title test...!!!" finished-at="2020-08-31T21:28:55Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyLoginPageTitleTest" duration-ms="5111" started-at="2020-08-31T22:20:19Z" description="verify login page title test...!!!" finished-at="2020-08-31T22:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyNoAccountText" duration-ms="1419" started-at="2020-08-31T21:29:15Z" finished-at="2020-08-31T21:29:16Z">
+        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyNoAccountText" duration-ms="660" started-at="2020-08-31T22:21:00Z" finished-at="2020-08-31T22:21:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNoAccountText -->
-        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyEmailAndPasswordLabelText" duration-ms="1464" started-at="2020-08-31T21:29:16Z" finished-at="2020-08-31T21:29:18Z">
+        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyEmailAndPasswordLabelText" duration-ms="1122" started-at="2020-08-31T22:21:21Z" finished-at="2020-08-31T22:21:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmailAndPasswordLabelText -->
-        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyShowAndHidePasswordLinkText" duration-ms="6142" started-at="2020-08-31T21:29:18Z" finished-at="2020-08-31T21:29:24Z">
+        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyShowAndHidePasswordLinkText" duration-ms="4645" started-at="2020-08-31T22:21:41Z" finished-at="2020-08-31T22:21:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShowAndHidePasswordLinkText -->
-        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyForgotPasswordLink" duration-ms="560" started-at="2020-08-31T21:29:24Z" finished-at="2020-08-31T21:29:25Z">
+        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyForgotPasswordLink" duration-ms="540" started-at="2020-08-31T22:21:46Z" finished-at="2020-08-31T22:21:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordLink -->
-        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyRememeberMeCheckBox" duration-ms="571" started-at="2020-08-31T21:29:25Z" finished-at="2020-08-31T21:29:25Z">
+        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyRememeberMeCheckBox" duration-ms="696" started-at="2020-08-31T22:21:46Z" finished-at="2020-08-31T22:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRememeberMeCheckBox -->
-        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyLoginButtonIsDisabled" duration-ms="2186" started-at="2020-08-31T21:29:25Z" finished-at="2020-08-31T21:29:27Z">
+        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyLoginButtonIsDisabled" duration-ms="518" started-at="2020-08-31T22:21:47Z" finished-at="2020-08-31T22:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginButtonIsDisabled -->
-        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyGoogleAndSSOBtn" duration-ms="2928" started-at="2020-08-31T21:29:27Z" finished-at="2020-08-31T21:29:30Z">
+        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyGoogleAndSSOBtn" duration-ms="1063" started-at="2020-08-31T22:21:47Z" finished-at="2020-08-31T22:21:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleAndSSOBtn -->
-        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="verifyFooterText" duration-ms="599" started-at="2020-08-31T21:29:30Z" finished-at="2020-08-31T21:29:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFooterText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@1b29d52b]" name="tearDown" is-config="true" duration-ms="1134" started-at="2020-08-31T21:29:31Z" finished-at="2020-08-31T21:29:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </test> <!-- Regression Functional Regression Test - edge -->
-    <test name="Regression Functional Regression Test - Chrome" duration-ms="118170" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:30:26Z">
-      <class name="com.qa.hubspot.tests.LoginPageTest">
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyLoginPageTitleTest" duration-ms="5560" started-at="2020-08-31T21:28:55Z" description="verify login page title test...!!!" finished-at="2020-08-31T21:29:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="verifyNoAccountText()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyNoAccountText" duration-ms="709" started-at="2020-08-31T21:29:35Z" finished-at="2020-08-31T21:29:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNoAccountText -->
-        <test-method status="PASS" signature="verifyEmailAndPasswordLabelText()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyEmailAndPasswordLabelText" duration-ms="1167" started-at="2020-08-31T21:29:56Z" finished-at="2020-08-31T21:29:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEmailAndPasswordLabelText -->
-        <test-method status="PASS" signature="verifyShowAndHidePasswordLinkText()[pri:5, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyShowAndHidePasswordLinkText" duration-ms="4870" started-at="2020-08-31T21:30:16Z" finished-at="2020-08-31T21:30:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShowAndHidePasswordLinkText -->
-        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:6, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyForgotPasswordLink" duration-ms="580" started-at="2020-08-31T21:30:21Z" finished-at="2020-08-31T21:30:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordLink -->
-        <test-method status="PASS" signature="verifyRememeberMeCheckBox()[pri:7, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyRememeberMeCheckBox" duration-ms="659" started-at="2020-08-31T21:30:21Z" finished-at="2020-08-31T21:30:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRememeberMeCheckBox -->
-        <test-method status="PASS" signature="verifyLoginButtonIsDisabled()[pri:8, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyLoginButtonIsDisabled" duration-ms="558" started-at="2020-08-31T21:30:22Z" finished-at="2020-08-31T21:30:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginButtonIsDisabled -->
-        <test-method status="PASS" signature="verifyGoogleAndSSOBtn()[pri:9, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyGoogleAndSSOBtn" duration-ms="1188" started-at="2020-08-31T21:30:23Z" finished-at="2020-08-31T21:30:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGoogleAndSSOBtn -->
-        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="verifyFooterText" duration-ms="586" started-at="2020-08-31T21:30:24Z" finished-at="2020-08-31T21:30:24Z">
+        <test-method status="PASS" signature="verifyFooterText()[pri:10, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="verifyFooterText" duration-ms="525" started-at="2020-08-31T22:21:48Z" finished-at="2020-08-31T22:21:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterText -->
       </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
       <class name="com.qa.hubspot.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@3162743f]" name="setUp" is-config="true" duration-ms="20502" started-at="2020-08-31T21:28:28Z" finished-at="2020-08-31T21:28:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="setUp" is-config="true" duration-ms="5928" started-at="2020-08-31T21:28:49Z" finished-at="2020-08-31T21:28:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.HomePageTest@cc239ba]" name="setUp" is-config="true" duration-ms="16922" started-at="2020-08-31T22:19:58Z" finished-at="2020-08-31T22:20:14Z">
           <params>
             <param index="0">
               <value>
@@ -242,11 +238,22 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@3162743f]" name="tearDown" is-config="true" duration-ms="713" started-at="2020-08-31T21:30:24Z" finished-at="2020-08-31T21:30:25Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="setUp" is-config="true" duration-ms="4647" started-at="2020-08-31T22:20:14Z" finished-at="2020-08-31T22:20:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@cc239ba]" name="tearDown" is-config="true" duration-ms="686" started-at="2020-08-31T22:21:49Z" finished-at="2020-08-31T22:21:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@69d6a7cd]" name="tearDown" is-config="true" duration-ms="808" started-at="2020-08-31T21:30:25Z" finished-at="2020-08-31T21:30:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@37b72ea]" name="tearDown" is-config="true" duration-ms="683" started-at="2020-08-31T22:21:50Z" finished-at="2020-08-31T22:21:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
