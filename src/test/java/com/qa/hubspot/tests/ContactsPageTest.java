@@ -9,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -29,7 +30,8 @@ public class ContactsPageTest {
 	ContactsPage contactsPage;
 	Credentials userCred;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
+	@Parameters(value = { "browser" })
 	public void setUp() throws InterruptedException {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
