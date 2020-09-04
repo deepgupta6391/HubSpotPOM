@@ -5,7 +5,7 @@ import java.util.List;
 public class AppConstants {
 
 	// **********************TimeOuts*************************
-	public static int DEFAULT_TIME_OUT = 20;
+	public static int DEFAULT_TIME_OUT = 40;
 
 	// **********************Page Constants**************************
 
