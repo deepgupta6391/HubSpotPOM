@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
 	By emailId = By.id("username");
 	By password = By.id("password");
 	By loginButon = By.id("loginBtn");
-	By signUpLink = By.linkText("Sign up111");
+	By signUpLink = By.linkText("Sign up");
 	By dontHaveAccText = By.xpath("//i18n-string[text()=\"Don't have an account?\"]");
 	By emailLabelText = By.id("UIFormControl-label-2");
 	By pwdLabelText = By.xpath("//label[@for='password']");

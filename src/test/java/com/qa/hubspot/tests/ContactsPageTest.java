@@ -30,7 +30,7 @@ public class ContactsPageTest {
 	ContactsPage contactsPage;
 	Credentials userCred;
 
-	@BeforeMethod(alwaysRun = true)
+	@BeforeTest(alwaysRun = true)
 	@Parameters(value = { "browser" })
 	public void setUp() throws InterruptedException {
 		basePage = new BasePage();
@@ -63,7 +63,7 @@ public class ContactsPageTest {
 		//contactsPage.createMultipleContacts(email, firstName, lastName, jobTitle);
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}
