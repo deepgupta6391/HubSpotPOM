@@ -32,10 +32,16 @@ public class ContactsPageTest {
 
 	@BeforeTest(alwaysRun = true)
 	@Parameters(value = { "browser" })
-	public void setUp() throws InterruptedException {
+	public void setUp(String browser) throws InterruptedException {
+		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+
+		if (browser.equals(null)) {
+			browserName = prop.getProperty("browser");
+		} else {
+			browserName = browser;
+		}
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
@@ -60,7 +66,7 @@ public class ContactsPageTest {
 	@Test(priority = 2, dataProvider = "getContactsTestData")
 	public void createContactsTest(String email, String firstName, String lastName, String jobTitle) {
 		contactsPage.createSingleContact(email, firstName, lastName, jobTitle);
-		//contactsPage.createMultipleContacts(email, firstName, lastName, jobTitle);
+		// contactsPage.createMultipleContacts(email, firstName, lastName, jobTitle);
 	}
 
 	@AfterTest
