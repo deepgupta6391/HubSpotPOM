@@ -18,10 +18,10 @@ public class HomePage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 
-	By header = By.cssSelector("h1.dashboard-selector__title11");
+	By header = By.cssSelector("h1.dashboard-selector__title");
 	By headerContentsList = By.xpath("//div[@class='mobile-nav-left-container']//a[@class='primary-link']");
 
-	By accountMenuLink = By.id("account-menu111");
+	By accountMenuLink = By.id("account-menu");
 	By accountName = By.xpath("//a[@class='navAccount-current']/div[@class='navAccount-accountName']");
 
 	By optionsUnderParentContacts = By.xpath(
